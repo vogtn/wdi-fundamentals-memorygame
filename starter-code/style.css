@@ -29,7 +29,22 @@ footer{
 nav{
 	background-color: #808080;
 }
-
+img{
+  height: 200px;
+  width: 150px;
+  border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	float: left;
+	margin: 8%;
+}
+.score{
+  float: right;
+  margin-right: 30%;
+}
+.losses{
+  float: left;
+}
 .align{
   margin-right: 35%;
 }
