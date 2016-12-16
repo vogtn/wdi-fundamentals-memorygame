@@ -11,6 +11,7 @@ var lossesScore = document.createElement('h3');
 var winCount = 0;
 var lossCount = 0;
 
+
 var createBoard = function(){
   for(var i =0; i< cards.length; i++){
     var card = document.createElement('div');
@@ -25,9 +26,14 @@ var isMatch = function(){
   if(cardsInPlay[0] === cardsInPlay[1]){
     console.log('winner');
     setTimeout(restart, 2000);
+    winCount += 1;
+    winScore.innerHTML = winCount;
+    Wins.appendChild(winScore);
   }else{
-    console.log('loser');
     setTimeout(restart, 2000);
+    lossCount += 1;
+    lossesScore.innerHTML = lossCount;
+    Losses.appendChild(lossesScore);
   }
 }
 var isTwoCards = function(){
